@@ -12,6 +12,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	libSDL_net1.2
 
 %define		_prefix		/usr/X11R6
 
@@ -30,6 +31,7 @@ Summary(pl):	Pliki na³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
 Requires:	SDL-devel
+Obsoletes:	libSDL_net1.2-devel
 
 %description devel
 Header files and more to develop SDL_net applications.
