@@ -7,7 +7,7 @@ Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
-# Source0-md5: e45b1048d2747480dcc65ece4130a920
+# Source0-md5:	e45b1048d2747480dcc65ece4130a920
 URL:		http://www.libsdl.org/projects/SDL_net/
 BuildRequires:	SDL-devel >= 1.2.5-2
 BuildRequires:	autoconf
