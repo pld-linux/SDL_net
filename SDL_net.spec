@@ -10,7 +10,7 @@ Group(fr):	Librairies
 Group(pl):	Biblioteki
 Source0:	http://www.libsdl.org/projects/SDL_net/src/%{name}-%{version}.tar.gz
 URL:		http://www.libsdl.org/projects/SDL_net/
-BuildRequires:	SDL-devel >= 1.0.1
+BuildRequires:	SDL-devel >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
