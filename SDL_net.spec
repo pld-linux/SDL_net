@@ -54,10 +54,10 @@ Statyczne biblioteki SDL_net.
 
 %build
 #rm -f missing
-#%{__libtoolize}
-#%{__aclocal}
+#%%{__libtoolize}
+#%%{__aclocal}
 %{__autoconf}
-#%{__automake}
+#%%{__automake}
 %configure
 %{__make}
 
