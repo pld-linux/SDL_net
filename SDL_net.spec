@@ -1,13 +1,18 @@
 Summary:	Simple DirectMedia Layer - network
 Name:		SDL_net
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
+Group(de):	Libraries
+Group(fr):	Librairies
+Group(pl):	Biblioteki
 Source0:	http://www.libsdl.org/projects/SDL_net/src/%{name}-%{version}.tar.gz
 URL:		http://www.devolution.com/~slouken/SDL/projects/SDL_net/
 BuildRequires:	SDL-devel >= 1.0.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
 
 %description
 This is an example portable network library for use with SDL. Note
@@ -18,6 +23,7 @@ network and GUI libraries.
 %package devel
 Summary:	Header files and more to develop SDL_net applications
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
@@ -29,6 +35,7 @@ Header files and more to develop SDL_net applications.
 %package static
 Summary:	Statis SDL_net libraries
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
@@ -40,7 +47,6 @@ Statis SDL_net libraries.
 %setup -q 
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
@@ -48,8 +54,6 @@ LDFLAGS="-s"; export LDFLAGS
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
 
 gzip -9nf README
 
@@ -61,7 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README COPYING
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
