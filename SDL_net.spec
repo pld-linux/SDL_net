@@ -1,14 +1,15 @@
 Summary:	Simple DirectMedia Layer - network
+Summary(pl):	Biblioteka obs³ugi sieci w SDL
 Name:		SDL_net
 Version:	1.1.1
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries
 Group(de):	Libraries
 Group(fr):	Librairies
 Group(pl):	Biblioteki
 Source0:	http://www.libsdl.org/projects/SDL_net/src/%{name}-%{version}.tar.gz
-URL:		http://www.devolution.com/~slouken/SDL/projects/SDL_net/
+URL:		http://www.libsdl.org/projects/SDL_net/
 BuildRequires:	SDL-devel >= 1.0.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -20,8 +21,12 @@ that this isn't necessarily how you would want to write a chat
 program, but it demonstrates how to use the basic features of the
 network and GUI libraries.
 
+%description -l pl
+Przyk³adowa biblioteka obs³ugi sieci korzystaj±ca z SDL.
+
 %package devel
 Summary:	Header files and more to develop SDL_net applications
+Summary(pl):	Pliki na³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
@@ -32,8 +37,12 @@ Requires:	SDL-devel
 %description devel
 Header files and more to develop SDL_net applications.
 
+%description -l pl devel
+Pliki na³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net.
+
 %package static
-Summary:	Statis SDL_net libraries
+Summary:	Static SDL_net libraries
+Summary(pl):	Statyczne biblioteki SDL_net
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
@@ -42,6 +51,9 @@ Requires:	%{name}-devel = %{version}
 
 %description static
 Statis SDL_net libraries.
+
+%description -l pl static
+Statyczne biblioteki SDL_net.
 
 %prep
 %setup -q 
