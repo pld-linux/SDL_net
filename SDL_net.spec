@@ -71,11 +71,8 @@ SDL_net.
 %setup -q
 
 %build
-#rm -f missing
-#%%{__libtoolize}
-#%%{__aclocal}
+cp /usr/share/automake/config.sub .
 %{__autoconf}
-#%%{__automake}
 %configure
 %{__make}
 
