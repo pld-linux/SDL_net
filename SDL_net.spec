@@ -5,13 +5,6 @@ Version:	1.2.3
 Release:	2
 License:	LGPL
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
 URL:		http://www.libsdl.org/projects/SDL_net/
 BuildRequires:	SDL-devel >= 1.2.0
@@ -35,13 +28,6 @@ PrzykЁadowa biblioteka obsЁugi sieci korzystaj╠ca z SDL.
 Summary:	Header files and more to develop SDL_net applications
 Summary(pl):	Pliki naЁСwkowe do rozwijania aplikacji u©ywaj╠cych SDL_net
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 Requires:	SDL-devel
 
@@ -55,13 +41,6 @@ Pliki naЁСwkowe do rozwijania aplikacji u©ywaj╠cych SDL_net.
 Summary:	Static SDL_net libraries
 Summary(pl):	Statyczne biblioteki SDL_net
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
