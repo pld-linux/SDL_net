@@ -33,7 +33,7 @@ Summary:	Header files and more to develop SDL_net applications
 Summary(pl):	Pliki nag³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net
 Summary(pt_BR):	Cabeçalhos para desenvolver programas utilizando a SDL_net
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	SDL-devel
 Obsoletes:	libSDL_net1.2-devel
 
@@ -54,7 +54,7 @@ Summary:	Static SDL_net libraries
 Summary(pl):	Statyczne biblioteki SDL_net
 Summary(pt_BR):	Biblioteca estática para desenvolvimento utilizando a SDL_net
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Statis SDL_net libraries.
