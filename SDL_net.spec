@@ -1,8 +1,8 @@
 Summary:	Simple DirectMedia Layer - network
 Summary(pl):	Biblioteka obs³ugi sieci w SDL
 Name:		SDL_net
-Version:	1.2.4
-Release:	3
+Version:	1.2.5
+Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
@@ -66,8 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -80,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc README.gz
+%doc README
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/SDL/*
