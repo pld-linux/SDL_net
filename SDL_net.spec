@@ -1,5 +1,6 @@
 Summary:	Simple DirectMedia Layer - network
 Summary(pl):	Biblioteka obs³ugi sieci w SDL
+Summary(pt_BR):	Simple DirectMedia Layer - Biblioteca de rede portável
 Name:		SDL_net
 Version:	1.2.5
 Release:	1
@@ -23,34 +24,50 @@ network and GUI libraries.
 %description -l pl
 Przyk³adowa biblioteka obs³ugi sieci korzystaj±ca z SDL.
 
+%description -l pt_BR
+Esta é uma biblioteca portável de rede para uso com o SDL.
+
 %package devel
 Summary:	Header files and more to develop SDL_net applications
 Summary(pl):	Pliki nag³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net
+Summary(pt_BR):	Cabeçalhos para desenvolver programas utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
 Requires:	SDL-devel
 Obsoletes:	libSDL_net1.2-devel
 
 %description devel
-Header files and more to develop SDL_net applications.
+This package contains the headers that programmers will need to
+develop applications which will use SDL_net.
 
-%description -l pl devel
-Pliki nag³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net.
+%description devel -l pl
+Pakiet ten zawiera pliki nag³ówkowepotzrebne przy rozwijania aplikacji
+u¿ywaj±cych SDL_net.
+
+%description devel -l pt_BR
+Este pacote contém os cabeçalhos que programadores vão precisar para
+desenvolver aplicações utilizando a SDL_net.
 
 %package static
 Summary:	Static SDL_net libraries
 Summary(pl):	Statyczne biblioteki SDL_net
+Summary(pt_BR):	Biblioteca estática para desenvolvimento utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
 %description static
 Statis SDL_net libraries.
 
-%description -l pl static
+%description static -l pl
 Statyczne biblioteki SDL_net.
 
+%description static -l pt_BR
+Este pacote contém a biblioteca estática que programadores vão
+precisar para desenvolver aplicações linkados estaticamente com a
+SDL_net.
+
 %prep
-%setup -q 
+%setup -q
 
 %build
 #rm -f missing
