@@ -1,8 +1,8 @@
 Summary:	Simple DirectMedia Layer - network
 Summary(pl):	Biblioteka obs³ugi sieci w SDL
 Name:		SDL_net
-Version:	1.2.3
-Release:	2
+Version:	1.2.4
+Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
