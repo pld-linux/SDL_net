@@ -2,19 +2,17 @@ Summary:	Simple DirectMedia Layer - network
 Summary(pl):	Biblioteka obs³ugi sieci w SDL
 Name:		SDL_net
 Version:	1.2.4
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
 URL:		http://www.libsdl.org/projects/SDL_net/
-BuildRequires:	SDL-devel >= 1.2.0
+BuildRequires:	SDL-devel >= 1.2.5-2
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libSDL_net1.2
-
-%define		_prefix		/usr/X11R6
 
 %description
 This is an example portable network library for use with SDL. Note
@@ -55,11 +53,11 @@ Statyczne biblioteki SDL_net.
 %setup -q 
 
 %build
-rm -f missing
-%{__libtoolize}
-%{__aclocal}
+#rm -f missing
+#%{__libtoolize}
+#%{__aclocal}
 %{__autoconf}
-%{__automake}
+#%{__automake}
 %configure
 %{__make}
 
