@@ -27,7 +27,7 @@ Przyk³adowa biblioteka obs³ugi sieci korzystaj±ca z SDL.
 
 %package devel
 Summary:	Header files and more to develop SDL_net applications
-Summary(pl):	Pliki na³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net
+Summary(pl):	Pliki nag³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
 Requires:	SDL-devel
@@ -37,7 +37,7 @@ Obsoletes:	libSDL_net1.2-devel
 Header files and more to develop SDL_net applications.
 
 %description -l pl devel
-Pliki na³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net.
+Pliki nag³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net.
 
 %package static
 Summary:	Static SDL_net libraries
