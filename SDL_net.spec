@@ -2,19 +2,19 @@ Summary:	Simple DirectMedia Layer - network
 Summary(pl):	Biblioteka obs³ugi sieci w SDL
 Summary(pt_BR):	Simple DirectMedia Layer - Biblioteca de rede portável
 Name:		SDL_net
-Version:	1.2.5
-Release:	2
+Version:	1.2.6
+Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
-# Source0-md5:	e45b1048d2747480dcc65ece4130a920
+# Source0-md5:	7be5b9ef36129ee187ace96906cd264c
 URL:		http://www.libsdl.org/projects/SDL_net/
 BuildRequires:	SDL-devel >= 1.2.5-2
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	libSDL_net1.2
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is an example portable network library for use with SDL. Note
@@ -34,7 +34,7 @@ Summary(pl):	Pliki nag³ówkowe do rozwijania aplikacji u¿ywaj±cych SDL_net
 Summary(pt_BR):	Cabeçalhos para desenvolver programas utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	SDL-devel
+Requires:	SDL-devel >= 1.2.5-2
 Obsoletes:	libSDL_net1.2-devel
 
 %description devel
@@ -71,8 +71,10 @@ SDL_net.
 %setup -q
 
 %build
-cp /usr/share/automake/config.sub .
+%{__libtoolize}
+%{__aclocal}
 %{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
@@ -90,11 +92,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc CHANGES README
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%doc README
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/SDL/*
