@@ -1,6 +1,6 @@
 Summary:	Simple DirectMedia Layer - network
-Summary(pl):	Biblioteka obs≥ugi sieci w SDL
-Summary(pt_BR):	Simple DirectMedia Layer - Biblioteca de rede port·vel
+Summary(pl.UTF-8):   Biblioteka obs≈Çugi sieci w SDL
+Summary(pt_BR.UTF-8):   Simple DirectMedia Layer - Biblioteca de rede port√°vel
 Name:		SDL_net
 Version:	1.2.6
 Release:	1
@@ -22,16 +22,16 @@ that this isn't necessarily how you would want to write a chat
 program, but it demonstrates how to use the basic features of the
 network and GUI libraries.
 
-%description -l pl
-Przyk≥adowa biblioteka obs≥ugi sieci korzystaj±ca z SDL.
+%description -l pl.UTF-8
+Przyk≈Çadowa biblioteka obs≈Çugi sieci korzystajƒÖca z SDL.
 
-%description -l pt_BR
-Esta È uma biblioteca port·vel de rede para uso com o SDL.
+%description -l pt_BR.UTF-8
+Esta √© uma biblioteca port√°vel de rede para uso com o SDL.
 
 %package devel
 Summary:	Header files and more to develop SDL_net applications
-Summary(pl):	Pliki nag≥Ûwkowe do rozwijania aplikacji uøywaj±cych SDL_net
-Summary(pt_BR):	CabeÁalhos para desenvolver programas utilizando a SDL_net
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe do rozwijania aplikacji u≈ºywajƒÖcych SDL_net
+Summary(pt_BR.UTF-8):   Cabe√ßalhos para desenvolver programas utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	SDL-devel >= 1.2.5-2
@@ -41,30 +41,30 @@ Obsoletes:	libSDL_net1.2-devel
 This package contains the headers that programmers will need to
 develop applications which will use SDL_net.
 
-%description devel -l pl
-Pakiet ten zawiera pliki nag≥Ûwkowepotzrebne przy rozwijania aplikacji
-uøywaj±cych SDL_net.
+%description devel -l pl.UTF-8
+Pakiet ten zawiera pliki nag≈Ç√≥wkowepotzrebne przy rozwijania aplikacji
+u≈ºywajƒÖcych SDL_net.
 
-%description devel -l pt_BR
-Este pacote contÈm os cabeÁalhos que programadores v„o precisar para
-desenvolver aplicaÁıes utilizando a SDL_net.
+%description devel -l pt_BR.UTF-8
+Este pacote cont√©m os cabe√ßalhos que programadores v√£o precisar para
+desenvolver aplica√ß√µes utilizando a SDL_net.
 
 %package static
 Summary:	Static SDL_net libraries
-Summary(pl):	Statyczne biblioteki SDL_net
-Summary(pt_BR):	Biblioteca est·tica para desenvolvimento utilizando a SDL_net
+Summary(pl.UTF-8):   Statyczne biblioteki SDL_net
+Summary(pt_BR.UTF-8):   Biblioteca est√°tica para desenvolvimento utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Statis SDL_net libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczne biblioteki SDL_net.
 
-%description static -l pt_BR
-Este pacote contÈm a biblioteca est·tica que programadores v„o
-precisar para desenvolver aplicaÁıes linkados estaticamente com a
+%description static -l pt_BR.UTF-8
+Este pacote cont√©m a biblioteca est√°tica que programadores v√£o
+precisar para desenvolver aplica√ß√µes linkados estaticamente com a
 SDL_net.
 
 %prep
