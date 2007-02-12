@@ -1,6 +1,6 @@
 Summary:	Simple DirectMedia Layer - network
-Summary(pl.UTF-8):   Biblioteka obsługi sieci w SDL
-Summary(pt_BR.UTF-8):   Simple DirectMedia Layer - Biblioteca de rede portável
+Summary(pl.UTF-8):	Biblioteka obsługi sieci w SDL
+Summary(pt_BR.UTF-8):	Simple DirectMedia Layer - Biblioteca de rede portável
 Name:		SDL_net
 Version:	1.2.6
 Release:	1
@@ -30,8 +30,8 @@ Esta é uma biblioteca portável de rede para uso com o SDL.
 
 %package devel
 Summary:	Header files and more to develop SDL_net applications
-Summary(pl.UTF-8):   Pliki nagłówkowe do rozwijania aplikacji używających SDL_net
-Summary(pt_BR.UTF-8):   Cabeçalhos para desenvolver programas utilizando a SDL_net
+Summary(pl.UTF-8):	Pliki nagłówkowe do rozwijania aplikacji używających SDL_net
+Summary(pt_BR.UTF-8):	Cabeçalhos para desenvolver programas utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	SDL-devel >= 1.2.5-2
@@ -51,8 +51,8 @@ desenvolver aplicações utilizando a SDL_net.
 
 %package static
 Summary:	Static SDL_net libraries
-Summary(pl.UTF-8):   Statyczne biblioteki SDL_net
-Summary(pt_BR.UTF-8):   Biblioteca estática para desenvolvimento utilizando a SDL_net
+Summary(pl.UTF-8):	Statyczne biblioteki SDL_net
+Summary(pt_BR.UTF-8):	Biblioteca estática para desenvolvimento utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
