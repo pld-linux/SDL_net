@@ -2,12 +2,12 @@ Summary:	Simple DirectMedia Layer - network
 Summary(pl.UTF-8):	Biblioteka obsługi sieci w SDL
 Summary(pt_BR.UTF-8):	Simple DirectMedia Layer - Biblioteca de rede portável
 Name:		SDL_net
-Version:	1.2.6
+Version:	1.2.7
 Release:	1
-License:	LGPL
+License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
-# Source0-md5:	7be5b9ef36129ee187ace96906cd264c
+# Source0-md5:	6bd4662d1423810f3140d4da21b6d912
 URL:		http://www.libsdl.org/projects/SDL_net/
 BuildRequires:	SDL-devel >= 1.2.5-2
 BuildRequires:	autoconf
@@ -93,14 +93,14 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
+%attr(755,root,root) %{_libdir}/libSDL_net-*.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/SDL/*
+%attr(755,root,root) %{_libdir}/libSDL_net.so
+%{_libdir}/libSDL_net.la
+%{_includedir}/SDL/SDL_net.h
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libSDL_net.a
