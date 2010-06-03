@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Biblioteka obsługi sieci w SDL
 Summary(pt_BR.UTF-8):	Simple DirectMedia Layer - Biblioteca de rede portável
 Name:		SDL_net
 Version:	1.2.7
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
