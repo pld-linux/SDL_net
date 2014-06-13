@@ -8,11 +8,12 @@ License:	Zlib-like
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_net/release/%{name}-%{version}.tar.gz
 # Source0-md5:	20e64e61d65662db66c379034f11f718
-URL:		http://www.libsdl.org/projects/SDL_net/
-BuildRequires:	SDL-devel >= 1.2.5-2
+URL:		http://www.libsdl.org/projects/SDL_net/release-1.2.html
+BuildRequires:	SDL-devel >= 1.2.14
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool >= 2:2.0
+Requires:	SDL >= 1.2.14
 Obsoletes:	libSDL_net1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,7 +35,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe do rozwijania aplikacji używających SDL_
 Summary(pt_BR.UTF-8):	Cabeçalhos para desenvolver programas utilizando a SDL_net
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	SDL-devel >= 1.2.5-2
+Requires:	SDL-devel >= 1.2.14
 Obsoletes:	libSDL_net1.2-devel
 
 %description devel
