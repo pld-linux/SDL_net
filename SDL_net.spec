@@ -58,7 +58,7 @@ Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
-Statis SDL_net libraries.
+Static SDL_net libraries.
 
 %description static -l pl.UTF-8
 Statyczne biblioteki SDL_net.
